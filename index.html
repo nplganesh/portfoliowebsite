@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganesh Bajurali | Web & wordpress developer in Nepal</title>
+<meta name="description" content="Explore the portfolio of Ganesh Bajurali — a creative web developer, SEO specialist, and content creator based in Nepal. Offering web design, SEO, and digital marketing services.">
+<meta name="keywords" content="Ganesh Bajurali,developer ganesh, web developer in Nepal, SEO expert Nepal, WordPress developer, portfolio website, digital marketing, content creator">
+
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #1387C1;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .text {
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      opacity: 0;
+      animation: typing 2.5s steps(20) 1s forwards;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes typing {
+      from { width: 0; opacity: 1; }
+      to { width: 15ch; opacity: 1; }
+    }
+
+    .fade-out {
+      animation: fadeOut 1s forwards;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="assets/img/profile/ganeshlogo.jpg" alt="Ganesh Bajurali Logo">
+  </div>
+  <div class="text">Developer Ganesh</div>
+
+  <script>
+    // Redirect to homepage after animation ends
+    setTimeout(() => {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = "home.html"; // Redirect to your homepage
+      }, 1000);
+    }, 4000);
+  </script>
+</body>
+</html>
